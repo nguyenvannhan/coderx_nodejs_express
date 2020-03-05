@@ -3,6 +3,9 @@ const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 
 var userRoutes = require('./routes/user.route');
+var authRoutes = require('./routes/auth.route');
+
+var authMiddleware = require('./middlewares/auth.middleware');
 
 const app = express();
 
@@ -21,6 +24,7 @@ app.get('/', (req, res) => {
     res.render('index', { title: 'Hello World' });
 });
 
-app.use('/users', userRoutes);
+app.use('/users', authMiddleware.requireAuth, userRoutes);
+app.use('/auth', authRoutes);
 
 app.listen(port, () => console.log(`Example app listening on port ${port}`));
