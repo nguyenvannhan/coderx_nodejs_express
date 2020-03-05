@@ -12,6 +12,12 @@ router.get('/create', controller.create);
 
 router.post('/create', validate.postCreate, controller.postCreate);
 
+router.get('/cookie', (req, res, next) => {
+    res.cookie('user-id', 12345);
+    res.send('Hello');
+});
+
 router.get('/:id', controller.get);
+
 
 module.exports = router;
