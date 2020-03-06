@@ -13,6 +13,8 @@ var productRoutes = require('./routes/product.route');
 var cartRoutes = require('./routes/cart.route');
 var transferRoutes = require('./routes/transfer.route');
 
+var apiProductRoute = require('./api/routes/product.route');
+
 var authMiddleware = require('./middlewares/auth.middleware');
 var sesisonMiddleware = require('./middlewares/session.middleware');
 var csurf = require('csurf')
@@ -41,5 +43,7 @@ app.use('/auth', authRoutes);
 app.use('/products', productRoutes);
 app.use('/cart', cartRoutes);
 app.use('/transfer', authMiddleware.requireAuth, transferRoutes);
+
+app.use('/api/products', apiProductRoute);
 
 app.listen(port, () => console.log(`Example app listening on port ${port}`));
