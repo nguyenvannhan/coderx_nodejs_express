@@ -14,12 +14,15 @@ block content
     table.table.table-bordered.table-striped.mt-4
         tr 
             th Name 
+            th Avatar 
             th Phone
             th
 
         each user in users
             tr 
                 td= user.name 
+                td
+                    img.img-fluid(src=`${user.avatar}`, width="100")
                 td= user.phone
                 td
                     a.btn.btn-light(href="/users/" + user.id) View
