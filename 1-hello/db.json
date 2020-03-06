@@ -763,5 +763,23 @@
         "3dcec377-3044-431c-a9d7-6a69e5ddc0ea": 1
       }
     }
+  ],
+  "transfers": [
+    {
+      "accountID": "23423423",
+      "amount": 12234324,
+      "id": "gSfPnov5"
+    },
+    {
+      "id": "QtQYxaTc",
+      "accountID": "234324234234",
+      "amount": 35436554234
+    },
+    {
+      "id": "zvxMjfCR",
+      "accountID": "243534646435",
+      "amount": 234234234,
+      "userId": "j_X06Mk-"
+    }
   ]
 }
