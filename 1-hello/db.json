@@ -742,5 +742,26 @@
       "image": "http://dummyimage.com/170x148.png/ff4444/ffffff",
       "price": "$2226.40"
     }
+  ],
+  "sessions": [
+    {
+      "id": "hdmSGXe1",
+      "cart": {
+        "3dcec377-3044-431c-a9d7-6a69e5ddc0ea": 3,
+        "9eaadba7-cb06-464c-be45-8ea17bbdb27f": 1,
+        "fc0c606c-f03e-495b-8241-0e0fc0ab7ecf": 1,
+        "41e258c8-b370-4426-a28c-549d8fbd2978": 2
+      }
+    },
+    {
+      "id": "i4AlHgfO"
+    },
+    {
+      "id": "e9NPzWH0",
+      "cart": {
+        "41e258c8-b370-4426-a28c-549d8fbd2978": 2,
+        "3dcec377-3044-431c-a9d7-6a69e5ddc0ea": 1
+      }
+    }
   ]
 }
